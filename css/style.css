@@ -1,0 +1,671 @@
+/* importar fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+/* MAIN RESOURCES */
+
+/* Header */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 100%;
+    margin: 0;
+    display: grid;
+}
+
+/* TODO A PARTIR DE TABLET HACER MENU HAMBURGUESA*/
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(47, 50, 58);
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header nav ul li {
+    display: inline-block;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background-color: rgb(80, 85, 98);
+    border-radius: 5px;
+}
+
+.header nav ul li a:hover {
+    background-color: rgb(37, 39, 45);
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(228, 253, 225);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    color: rgba(47, 50, 58);
+    font-size: 50px;
+}
+
+/* END BANNER */
+
+/* Inmuebles cards */
+
+.inmuebles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 15px;
+    margin: 50px;
+    width: 95%;
+}
+
+.inmuebles-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0 30px 0;
+    justify-items: center;
+
+}
+
+.inmuebles-index img {
+    height: 77%;
+    width: 100%;
+}
+
+
+.inmuebles img {
+    height: 77%;
+    width: 100%;
+}
+
+.inmuebles-cards {
+    height: 300px;
+    width: 250px;
+    border: 2px solid rgb(215, 219, 227);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all .4s ease-out;
+    box-shadow: 5px 5px 5px 5px rgb(215 219 227);
+}
+
+.inmuebles-cards:hover {
+    transform: scale(1.1);
+}
+
+/* END INMUEBLES TARJETAS */
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(204, 218, 209);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.footer-home-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer-home-link img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-home-link a {
+    text-decoration: none;
+}
+
+.footer-home-link h2 {
+    font-size: 45px;
+    color: rgb(80, 85, 98);
+
+}
+
+.footer-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.footer div h3 {
+    font-size: 15px;
+}
+
+.footer div iframe {
+    width: 80%;
+    height: 65%;
+}
+
+.redes-sociales {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.redes-sociales a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociales img {
+    height: 50%;
+    width: 50%;
+}
+
+/* END FOOTER */
+
+/* MEDIA QUERYS*/
+
+@media screen and (max-width: 768px) {
+    .inmuebles {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        height: auto;
+    }
+
+    .header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .header h1 {
+        margin-left: 10px;
+        font-size: 3.5rem;
+    }
+    
+    .inmuebles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .inmuebles-cards {
+        height: 550px;
+        width: 500px;
+    }
+
+    .inmuebles-cards h3{
+        font-size: 2rem;
+    }
+
+    .inmuebles-cards p {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-home-link h2 {
+        font-size: 3.4rem;
+    }
+
+    .footer-contact h2 {
+        font-size: 3.5rem;
+    }
+
+    .footer div h3 {
+        font-size: 2.3rem;
+    }
+
+    .redes-sociales {
+        display: flex;
+        width: 90%;
+    }
+}
+/* END MAIN STYLE */
+
+/* INDEX CSS */
+
+/* Main */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/interior-casa-2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    background-color: rgb(234, 238, 245);
+    border-radius: 5px;
+    border-color: rgb(234, 238, 245) ;
+    box-shadow: 0px 0px 36px 11px  rgb(94, 105, 127);;
+}
+
+#caracteristica{
+    width: 100%;
+    height: 30%;
+}
+
+.contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/interior-casa-5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+}
+
+.contactanos-link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactanos-link h2 {
+    font-size: 4.5rem ;
+    color: rgb(209, 96, 61) ;
+}
+.contactanos-link a {
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: rgb(80, 85, 98);
+    margin: 2px ;
+    padding: 5px;
+    font-weight:900;
+    font-size: 20px;
+}
+
+.contactanos-link a:hover {
+        background-color: rgb(37, 39, 45) ;
+}
+
+.conoceme {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        width: 100%;
+        margin: 20px 0 30px 0;
+}
+
+.conoceme-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conoceme h2 {
+    font-size: 35px;
+}
+
+.conoceme img{
+    width: 100%;
+    height: 100%;
+}
+
+.conoceme p {
+    margin: 30px;
+    text-align: center;
+}
+.conoceme a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(80, 85, 98);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight:800;
+    font-size: 20px;
+}
+
+.conoceme a:hover {
+    background-color: rgb(37, 39, 45) ;
+}
+/* END MAIN */
+
+/* MEDIA QUERYS INDEX */
+
+@media screen and (max-width: 425px) {
+    .hero {
+        height: 1500px;
+    }
+
+    .hero-form {
+        height: 750px;
+    }
+
+    .hero-form-inside{
+        width: 750px;
+    }
+
+    .hero-form-inside select {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    .hero-form h2 {
+        font-size: 4rem;
+    }
+
+    .hero-form h3 {
+        font-size: 3rem;
+    }
+
+    .inmuebles-index {
+        row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactanos-link h2 {
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    .contactanos-link a {
+        font-size: 4rem;
+    }
+
+    .conoceme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conoceme img {
+        width: 50%;
+    }
+    
+    .conoceme h2 {
+        font-size: 80px;
+    }
+
+    .conoceme p {
+        font-size: 40px;
+    }
+    
+    .conoceme a {
+        font-size: 50px;
+    }
+}
+
+/* VENDE-RENTA PAGE CSS */
+
+/* Main */
+
+.vr-main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: rgb(228, 253, 225);
+    background-image: url(../images/interior-casa-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vr-hero-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(234, 238, 245);
+    border-radius: 5px;
+    border-color: rgb(234, 238, 245) ;
+    box-shadow: 0px 0px 36px 11px  rgb(94, 105, 127);
+    align-items: center;
+    justify-content: center;
+}
+
+.vr-hero-form-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vr-hero-form-inside h2 {
+    font-size: 40px;
+}
+
+.vr-hero-form-inside h3 {
+    font-size: 30px;
+}
+
+/* .hero-form-inside label {
+    font-size: 25px;
+    margin: 10px; 
+}
+.hero-form-inside input    {
+    width: 200px;
+}  */
+
+/* END VENDE-RENTA PAGE */
+
+/* ACERCA-DE PAGE */
+/* Main */
+* {
+    box-sizing: border-box;
+}
+
+.main-acerca-de {
+    width: 100%;
+    background-color: rgb(236, 241, 246); 
+    height: calc(100vh - 100px);   
+}
+
+.asesor-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: calc(90vh - 100px);   
+}
+
+.asesor h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 253, 225);
+    font-size: 50px;
+    grid-column: span 2;
+}
+
+.asesor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asesor img{ 
+    width: 85%;
+}
+
+
+.asesor-text {
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 425px) {
+    .main-acerca-de {
+        height: 100%;
+    }
+
+    .asesor-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .asesor-img {
+        margin: 20px 0 20px 0 ;
+        width: 45%;
+        height: 70%;
+    }
+
+    .asesor-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    }
+}
+
+/* END ACERCA-DE PAGE */
+
+/* CONTACTANOS PAGE */
+
+/* Main */
+
+.contactanos-main {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.contactanos-main-info {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    background-image: url(../images/handshake.webp);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos-main-info-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    padding: 40px;
+    background-color: rgb(234, 238, 245);
+    border-radius: 5px;
+    border-color: rgb(234, 238, 245) ;
+    box-shadow: 0px 0px 36px 11px  rgb(94, 105, 127);
+    align-items: center;
+    justify-content: center;
+}
+
+.contactanos-main h2 {
+    font-size: 40px;
+}
+
+.contactanos-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+.contactanos-main-info label {
+    font-size: 25px;
+    margin: 10px; 
+}
+
+.contactanos-main-info input {
+    width: 200px;
+}

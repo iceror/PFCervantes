@@ -7,7 +7,7 @@
 
     .asesor {
         height: 100%;
-        
+
         h2 {
             display: flex;
             text-align: center;
@@ -26,7 +26,7 @@
             grid-template-rows: 1fr;
             column-gap: 10px;
             row-gap: 10px;
-            height: calc(90vh - 100px);
+            height: calc(90vh - 150px);
 
             .asesor-img {
                 display: flex;

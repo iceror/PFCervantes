@@ -300,7 +300,7 @@
     grid-template-rows: 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    height: calc(90vh - 100px); }
+    height: calc(90vh - 150px); }
     .main-acerca-de .asesor-info .asesor-img {
       display: flex;
       align-items: center;

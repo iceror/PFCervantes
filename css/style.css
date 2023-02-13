@@ -655,12 +655,13 @@
     font-size: 40px;
 }
 
-.contactanos-form {
+/* .contactanos-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px;
-}
+} */
+
 .contactanos-main-info label {
     font-size: 25px;
     margin: 10px; 

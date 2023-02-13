@@ -2,8 +2,12 @@
     width: 100%;
     background-color: rgb(236, 241, 246);
     height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
 
     .asesor {
+        height: 100%;
+        
         h2 {
             display: flex;
             text-align: center;

@@ -280,15 +280,19 @@
 .main-acerca-de {
   width: 100%;
   background-color: #ecf1f6;
-  height: calc(100vh - 100px); }
-  .main-acerca-de .asesor h2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #e4fde1;
-    font-size: 50px;
-    grid-column: span 2; }
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column; }
+  .main-acerca-de .asesor {
+    height: 100%; }
+    .main-acerca-de .asesor h2 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #e4fde1;
+      font-size: 50px;
+      grid-column: span 2; }
   .main-acerca-de .asesor-info {
     width: 100%;
     display: grid;

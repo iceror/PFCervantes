@@ -160,7 +160,8 @@
     background-color: #eaeef5;
     border-radius: 5px;
     border-color: #eaeef5;
-    box-shadow: 0px 0px 36px 11px #5e697f; }
+    box-shadow: 0px 0px 36px 11px #5e697f;
+    text-align: center; }
     .hero .hero-form #caracteristica {
       width: 100%;
       height: 30%; }
@@ -346,7 +347,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
 
 @media screen and (max-width: 768px) {
   .inmuebles {
@@ -359,8 +361,7 @@
     align-items: center;
     height: auto; }
     .header h1 {
-      margin-left: 10px;
-      font-size: 3.5rem; }
+      font-size: 4.5rem; }
     .header img {
       width: 150px;
       height: 150px; }
@@ -416,23 +417,23 @@
       width: 550px;
       height: 550px;
       font-size: 2rem; }
-  .contactanos-link h2 {
-    font-size: 7rem;
+  .contactanos .contactanos-link h2 {
+    font-size: 9rem;
     text-align: center; }
-  .contactanos-link a {
-    font-size: 4rem; }
+  .contactanos .contactanos-link a {
+    font-size: 3.5rem; }
   .conoceme {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .conoceme img {
       width: 50%; }
-    .conoceme h2 {
-      font-size: 80px; }
-    .conoceme p {
+    .conoceme .conoceme-text h2 {
+      font-size: 7rem; }
+    .conoceme .conoceme-text p {
       font-size: 40px; }
-    .conoceme a {
-      font-size: 50px; } }
+    .conoceme .conoceme-text a {
+      font-size: 3.5rem; } }
 
 @media screen and (max-width: 425px) {
   .vr-main {

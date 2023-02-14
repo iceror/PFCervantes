@@ -1,0 +1,303 @@
+// MAIN RESOURCES
+
+@media screen and (max-width: 768px) {
+    .inmuebles {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        height: auto;
+
+        h1 {
+            margin-left: 10px;
+            font-size: 3.5rem;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+
+    .inmuebles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .inmuebles-cards {
+            height: 550px;
+            width: 500px;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer-home-link h2 {
+            font-size: 3.4rem;
+        }
+
+        .footer-contact {
+            h2 {
+                font-size: 3.5rem;
+            }
+
+            h3 {
+                font-size: 2.3rem;
+            }
+        }
+
+        .redes-sociales {
+            display: flex;
+            width: 90%;
+        }
+    }
+}
+
+// INDEX //TODO FONT SIZE BOTONES NO SE APLICA 
+@media screen and (max-width: 425px) {
+    .hero {
+        height: 1500px;
+
+        .hero-form {
+            height: 750px;
+
+            .hero-form-inside {
+                width: 750px;
+
+                h2 {
+                    font-size: 4rem;
+                }
+
+                h3 {
+                    font-size: 3rem;
+                }
+
+                select {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .inmuebles-index {
+        row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+        .inmuebles-cards {
+            width: 550px;
+            height: 550px;
+            font-size: 2rem;
+        }
+    }
+
+    .contactanos-link {
+        h2 {
+            font-size: 7rem;
+            text-align: center;
+        }
+
+        a {
+            font-size: 4rem;
+        }
+    }
+
+    .conoceme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        a {
+            font-size: 50px;
+        }
+    }
+}
+
+// VENDE-RENTA 
+
+@media screen and (max-width:425px){
+    .vr-main {
+        height: 1500px;
+
+        .vr-hero-form{
+            height: 1150px;
+
+
+            .vr-hero-form-inside {
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+
+                h2{
+                    font-size: 5rem;
+                    text-align: center;
+                }
+
+                label{
+                    font-size: 2.5rem;
+                }
+
+                input{
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                #nombre {
+                    width: 20rem;
+                }
+
+                #correo {
+                    width: 20rem;
+                }
+
+                #numero-telefonico {
+                    width: 20rem;
+                }
+
+                input[type=reset]{
+                    width: 10rem;
+                    height: 3rem;
+                    font-size: 2rem;
+                }
+
+                input[type=submit]{
+                    width: 10rem;
+                    height: 3rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// ACERCA DE 
+@media screen and (max-width: 425px) {
+    .main-acerca-de {
+        height: 100%;
+
+        .banner {
+            h2{
+                font-size: 4rem;
+            }
+        }
+
+        .asesor {
+            height: 1600px;
+        }
+
+        .asesor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        .asesor-img {
+            margin: 30px 0 30px 0;
+            width: 80%;
+
+        }
+
+        .asesor-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 75%;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// CONTACTANOS 
+
+@media screen and (max-width: 425px) {
+    .banner {
+        h2{
+            font-size: 5rem;
+        }
+    }
+    .contactanos-main {
+        height: 1450px;
+
+        .contactanos-main-info-form {
+            width: 75%;
+            height: 60%;
+
+            h2{
+                font-size: 5rem;
+                text-align: center;
+            }
+
+            form label {
+                font-size: 3rem;
+            }
+
+            input[type=nombre]{
+                width: 25rem;
+                height: 3rem;
+            }
+
+            input[type=email]{
+                width: 25rem;
+                height: 3rem;
+            }
+
+            input[type=tel]{
+                width: 25rem;
+                height: 3rem;
+            }
+
+            input[type=reset]{
+                width: 10rem;
+                height: 3rem;
+                font-size: 2rem;
+            }
+
+            input[type=submit]{
+                width: 10rem;
+                height: 3rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}

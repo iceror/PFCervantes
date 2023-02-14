@@ -124,7 +124,7 @@
     .footer .footer-contact h3 {
       font-size: 15px; }
     .footer .footer-contact iframe {
-      width: 80%;
+      width: 100%;
       height: 65%; }
   .footer .redes-sociales {
     width: 70%;
@@ -211,7 +211,7 @@
       margin: 2px;
       padding: 5px;
       font-weight: 900;
-      font-size: 20px; }
+      font-size: 1.3rem; }
       .contactanos .contactanos-link a:hover {
         background-color: #25272d; }
 
@@ -324,7 +324,6 @@
   .contactanos-main .contactanos-main-info {
     width: 100%;
     height: 100%;
-    background-color: #e6e6e6;
     background-image: url(../images/handshake.webp);
     background-position: center;
     display: flex;
@@ -348,3 +347,177 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+
+@media screen and (max-width: 768px) {
+  .inmuebles {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 425px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: auto; }
+    .header h1 {
+      margin-left: 10px;
+      font-size: 3.5rem; }
+    .header img {
+      width: 150px;
+      height: 150px; }
+  .inmuebles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .inmuebles .inmuebles-cards {
+      height: 550px;
+      width: 500px; }
+      .inmuebles .inmuebles-cards h3 {
+        font-size: 2rem; }
+      .inmuebles .inmuebles-cards p {
+        font-size: 1.5rem; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .footer-home-link h2 {
+      font-size: 3.4rem; }
+    .footer .footer-contact h2 {
+      font-size: 3.5rem; }
+    .footer .footer-contact h3 {
+      font-size: 2.3rem; }
+    .footer .redes-sociales {
+      display: flex;
+      width: 90%; } }
+
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 1500px; }
+    .hero .hero-form {
+      height: 750px; }
+      .hero .hero-form .hero-form-inside {
+        width: 750px; }
+        .hero .hero-form .hero-form-inside h2 {
+          font-size: 4rem; }
+        .hero .hero-form .hero-form-inside h3 {
+          font-size: 3rem; }
+        .hero .hero-form .hero-form-inside select {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          font-size: 4rem; }
+  .inmuebles-index {
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr; }
+    .inmuebles-index .inmuebles-cards {
+      width: 550px;
+      height: 550px;
+      font-size: 2rem; }
+  .contactanos-link h2 {
+    font-size: 7rem;
+    text-align: center; }
+  .contactanos-link a {
+    font-size: 4rem; }
+  .conoceme {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .conoceme img {
+      width: 50%; }
+    .conoceme h2 {
+      font-size: 80px; }
+    .conoceme p {
+      font-size: 40px; }
+    .conoceme a {
+      font-size: 50px; } }
+
+@media screen and (max-width: 425px) {
+  .vr-main {
+    height: 1500px; }
+    .vr-main .vr-hero-form {
+      height: 1150px; }
+      .vr-main .vr-hero-form .vr-hero-form-inside {
+        width: 800px;
+        display: flex;
+        flex-direction: column; }
+        .vr-main .vr-hero-form .vr-hero-form-inside h2 {
+          font-size: 5rem;
+          text-align: center; }
+        .vr-main .vr-hero-form .vr-hero-form-inside label {
+          font-size: 2.5rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside input {
+          width: 2rem;
+          height: 2rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside h3 {
+          font-size: 2rem;
+          text-align: center; }
+        .vr-main .vr-hero-form .vr-hero-form-inside #nombre {
+          width: 20rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside #correo {
+          width: 20rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside #numero-telefonico {
+          width: 20rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside input[type=reset] {
+          width: 10rem;
+          height: 3rem;
+          font-size: 2rem; }
+        .vr-main .vr-hero-form .vr-hero-form-inside input[type=submit] {
+          width: 10rem;
+          height: 3rem;
+          font-size: 2rem; } }
+
+@media screen and (max-width: 425px) {
+  .main-acerca-de {
+    height: 100%; }
+    .main-acerca-de .banner h2 {
+      font-size: 4rem; }
+    .main-acerca-de .asesor {
+      height: 1600px; }
+    .main-acerca-de .asesor-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%; }
+    .main-acerca-de .asesor-img {
+      margin: 30px 0 30px 0;
+      width: 80%; }
+    .main-acerca-de .asesor-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 75%;
+      font-size: 2.5rem; } }
+
+@media screen and (max-width: 425px) {
+  .banner h2 {
+    font-size: 5rem; }
+  .contactanos-main {
+    height: 1450px; }
+    .contactanos-main .contactanos-main-info-form {
+      width: 75%;
+      height: 60%; }
+      .contactanos-main .contactanos-main-info-form h2 {
+        font-size: 5rem;
+        text-align: center; }
+      .contactanos-main .contactanos-main-info-form form label {
+        font-size: 3rem; }
+      .contactanos-main .contactanos-main-info-form input[type=nombre] {
+        width: 25rem;
+        height: 3rem; }
+      .contactanos-main .contactanos-main-info-form input[type=email] {
+        width: 25rem;
+        height: 3rem; }
+      .contactanos-main .contactanos-main-info-form input[type=tel] {
+        width: 25rem;
+        height: 3rem; }
+      .contactanos-main .contactanos-main-info-form input[type=reset] {
+        width: 10rem;
+        height: 3rem;
+        font-size: 2rem; }
+      .contactanos-main .contactanos-main-info-form input[type=submit] {
+        width: 10rem;
+        height: 3rem;
+        font-size: 2rem; } }

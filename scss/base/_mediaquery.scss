@@ -30,9 +30,9 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        row-gap: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        row-gap: 3rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         .inmuebles-cards {
             height: 550px;
@@ -104,7 +104,7 @@
     }
 
     .inmuebles-index {
-        row-gap: 20px;
+        row-gap: 3rem;
         grid-template-columns: 1fr 1fr;
 
         .inmuebles-cards {

@@ -73,8 +73,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  row-gap: 15px;
-  margin: 50px;
+  row-gap: 30px;
+  margin: 30px;
   width: 95%; }
   .inmuebles .inmuebles-cards {
     height: 300px;
@@ -370,9 +370,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    row-gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    row-gap: 3rem;
+    margin-top: 40px;
+    margin-bottom: 40px; }
     .inmuebles .inmuebles-cards {
       height: 550px;
       width: 500px; }
@@ -411,7 +411,7 @@
           width: 100%;
           font-size: 4rem; }
   .inmuebles-index {
-    row-gap: 20px;
+    row-gap: 3rem;
     grid-template-columns: 1fr 1fr; }
     .inmuebles-index .inmuebles-cards {
       width: 550px;

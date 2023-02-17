@@ -1,5 +1,16 @@
-/* fuente, clases que se repiten */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
+.banner, .header a, .header img, .inmuebles .inmuebles-cards, .footer .redes-sociales a, .hero, .hero .hero-form, .contactanos, .contactanos .contactanos-link, .conoceme .conoceme-text, .vr-main, .vr-main .vr-hero-form, .vr-main .vr-hero-form .vr-hero-form-inside, .main-acerca-de, .main-acerca-de .asesor h2, .main-acerca-de .asesor-info .asesor-img, .main-acerca-de .asesor-text, .contactanos-main, .contactanos-main .contactanos-main-info, .contactanos-main .contactanos-main-info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.header, .inmuebles, .footer .redes-sociales, .inmuebles-index, .conoceme {
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+
+/* fuente, clases que se repiten */
 * {
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -21,10 +32,7 @@
   background-color: #e4fde1;
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-repeat: no-repeat; }
   .banner h2 {
     color: #2f323a;
     font-size: 50px; }
@@ -33,20 +41,12 @@
   width: 100%;
   height: 100px;
   background-color: #2f323a;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
-  align-items: center; }
+  grid-template-columns: 1fr 3fr 3fr; }
   .header a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    text-decoration: none; }
   .header img {
     height: 80px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    width: 80px; }
   .header h1 {
     color: white;
     font-size: 40px; }
@@ -69,10 +69,8 @@
           background-color: #25272d; }
 
 .inmuebles {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-items: center;
   row-gap: 30px;
   margin: 30px;
   width: 95%; }
@@ -81,11 +79,9 @@
     width: 250px;
     border: 2px solid #d7dbe3;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     transition: all .4s ease-out;
-    box-shadow: 5px 5px 5px 5px #d7dbe3; }
+    box-shadow: 5px 5px 5px 5px #eaeef5; }
     .inmuebles .inmuebles-cards:hover {
       transform: scale(1.1); }
     .inmuebles .inmuebles-cards img {
@@ -97,8 +93,8 @@
   height: 100%;
   background-color: #ccdad1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center; }
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr; }
   .footer .footer-home-link {
     height: 100%;
     width: 100%;
@@ -128,23 +124,13 @@
       height: 65%; }
   .footer .redes-sociales {
     width: 70%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center; }
-    .footer .redes-sociales a {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+    grid-template-rows: 1fr 1fr; }
     .footer .redes-sociales img {
       height: 50%;
       width: 50%; }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../images/interior-casa-2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,8 +138,6 @@
   height: calc(100vh - 100px);
   width: 100%; }
   .hero .hero-form {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 200px;
     padding: 40px;
@@ -167,17 +151,15 @@
       height: 30%; }
 
 .inmuebles-index {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 30px 0 30px 0;
-  justify-items: center; }
+  margin: 30px 0 30px 0; }
   .inmuebles-index img {
     height: 77%;
     width: 100%; }
   .inmuebles-index .inmuebles-cards {
     height: 300px;
     width: 250px;
-    border: 2px solid #d7dbe3;
+    border: 2px solid #eaeef5;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -188,64 +170,50 @@
       transform: scale(1.1); }
 
 .contactanos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../images/interior-casa-5.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 25%; }
-  .contactanos .contactanos-link {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .contactanos .contactanos-link h2 {
-      font-size: 4.5rem;
-      color: #d1603d; }
-    .contactanos .contactanos-link a {
-      text-decoration: none;
-      color: aliceblue;
-      border-radius: 5px;
-      background-color: #505562;
-      margin: 2px;
-      padding: 5px;
-      font-weight: 900;
-      font-size: 1.3rem; }
-      .contactanos .contactanos-link a:hover {
-        background-color: #25272d; }
+  .contactanos .contactanos-link h2 {
+    font-size: 4.5rem;
+    color: #d1603d; }
+  .contactanos .contactanos-link a {
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: #505562;
+    margin: 2px;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 1.3rem; }
+    .contactanos .contactanos-link a:hover {
+      background-color: #25272d; }
 
 .conoceme {
-  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  justify-items: center;
   width: 100%;
   margin: 20px 0 30px 0; }
   .conoceme img {
     width: 100%;
     height: 100%; }
-  .conoceme .conoceme-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .conoceme .conoceme-text h2 {
-      font-size: 35px; }
-    .conoceme .conoceme-text p {
-      margin: 30px;
-      text-align: center; }
-    .conoceme .conoceme-text a {
-      text-decoration: none;
-      color: aliceblue;
-      background-color: #505562;
-      padding: 5px;
-      border-radius: 5px;
-      font-weight: 800;
-      font-size: 20px; }
-      .conoceme .conoceme-text a:hover {
-        background-color: #25272d; }
+  .conoceme .conoceme-text h2 {
+    font-size: 35px; }
+  .conoceme .conoceme-text p {
+    margin: 30px;
+    text-align: center; }
+  .conoceme .conoceme-text a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #505562;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 20px; }
+    .conoceme .conoceme-text a:hover {
+      background-color: #25272d; }
 
 .vr-main {
   width: 100%;
@@ -253,44 +221,26 @@
   background-color: #e4fde1;
   background-image: url(../images/interior-casa-4.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-repeat: no-repeat; }
   .vr-main .vr-hero-form {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     padding: 40px;
     background-color: #eaeef5;
     border-radius: 5px;
     border-color: #eaeef5;
-    box-shadow: 0px 0px 36px 11px #5e697f;
-    align-items: center;
-    justify-content: center; }
-    .vr-main .vr-hero-form .vr-hero-form-inside {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .vr-main .vr-hero-form .vr-hero-form-inside h2 {
-        font-size: 40px; }
-      .vr-main .vr-hero-form .vr-hero-form-inside h3 {
-        font-size: 30px; }
+    box-shadow: 0px 0px 36px 11px #5e697f; }
+    .vr-main .vr-hero-form .vr-hero-form-inside h2 {
+      font-size: 40px; }
+    .vr-main .vr-hero-form .vr-hero-form-inside h3 {
+      font-size: 30px; }
 
 .main-acerca-de {
   width: 100%;
   background-color: #ecf1f6;
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column; }
+  height: calc(100vh - 100px); }
   .main-acerca-de .asesor {
     height: 100%; }
     .main-acerca-de .asesor h2 {
-      display: flex;
       text-align: center;
-      justify-content: center;
-      align-items: center;
       background-color: #e4fde1;
       font-size: 50px;
       grid-column: span 2; }
@@ -302,35 +252,22 @@
     column-gap: 10px;
     row-gap: 10px;
     height: calc(90vh - 150px); }
-    .main-acerca-de .asesor-info .asesor-img {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .main-acerca-de .asesor-info .asesor-img img {
-        width: 85%; }
+    .main-acerca-de .asesor-info .asesor-img img {
+      width: 85%; }
   .main-acerca-de .asesor-text {
     font-size: 20px;
-    margin: 0 20px 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    margin: 0 20px 0 20px; }
 
 .contactanos-main {
   width: 100%;
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column; }
+  height: calc(100vh - 100px); }
   .contactanos-main h2 {
     font-size: 40px; }
   .contactanos-main .contactanos-main-info {
     width: 100%;
     height: 100%;
     background-image: url(../images/handshake.webp);
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: center; }
     .contactanos-main .contactanos-main-info label {
       font-size: 25px;
       margin: 10px; }
@@ -343,12 +280,7 @@
     background-color: #eaeef5;
     border-radius: 5px;
     border-color: #eaeef5;
-    box-shadow: 0px 0px 36px 11px #5e697f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
+    box-shadow: 0px 0px 36px 11px #5e697f; }
 
 @media screen and (max-width: 768px) {
   .inmuebles {
@@ -366,10 +298,8 @@
       width: 150px;
       height: 150px; }
   .inmuebles {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
     row-gap: 3rem;
     margin-top: 40px;
     margin-bottom: 40px; }

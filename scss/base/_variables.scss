@@ -1,0 +1,20 @@
+$principal-color: (rgb(47, 50, 58));
+$secondary-color: (rgb(204, 218, 209));
+$tertiary-color: ( rgb(234, 238, 245));
+$banner-color: (rgb(228, 253, 225));
+$shadow-color: (rgb(94, 105, 127));
+$hover-color: (rgb(37, 39, 45));
+$button-color: (rgb(80, 85, 98));
+
+%flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+%grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

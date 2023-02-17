@@ -1,8 +1,7 @@
 .inmuebles {
-    display: grid;
+    @extend %grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
     row-gap: 30px;
     margin: 30px;
     width: 95%;
@@ -12,11 +11,10 @@
         width: 250px;
         border: 2px solid rgb(215, 219, 227);
         border-radius: 5px;
-        display: flex;
-        flex-direction: column;
+        @extend %flex;
         text-align: center;
         transition: all .4s ease-out;
-        box-shadow: 5px 5px 5px 5px rgb(215, 219, 227);
+        box-shadow: 5px 5px 5px 5px $tertiary-color;
 
         &:hover {
             transform: scale(1.1);

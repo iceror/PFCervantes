@@ -2,18 +2,15 @@
     width: 100%;
     background-color: rgb(236, 241, 246);
     height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
+    @extend %flex;
 
     .asesor {
         height: 100%;
 
         h2 {
-            display: flex;
+            @extend %flex;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(228, 253, 225);
+            background-color: $banner-color;
             font-size: 50px;
             grid-column: span 2;
         }
@@ -29,9 +26,7 @@
             height: calc(90vh - 150px);
 
             .asesor-img {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @extend %flex;
 
                 img {
                     width: 85%;
@@ -42,8 +37,6 @@
         .asesor-text {
             font-size: 20px;
             margin: 0 20px 0 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
         }
     }

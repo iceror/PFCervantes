@@ -1,8 +1,7 @@
 .contactanos-main {
     width: 100%;
     height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
+    @extend %flex;
 
     h2 {
         font-size: 40px;
@@ -13,10 +12,7 @@
         height: 100%;
         background-image: url(../images/handshake.webp);
         background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         
         label {
             font-size: 25px;
@@ -32,14 +28,10 @@
         width: 50%;
         height: 350px;
         padding: 40px;
-        background-color: rgb(234, 238, 245);
+        background-color: $tertiary-color;
         border-radius: 5px;
-        border-color: rgb(234, 238, 245) ;
-        box-shadow: 0px 0px 36px 11px  rgb(94, 105, 127);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        border-color: $tertiary-color;
+        box-shadow: 0px 0px 36px 11px  $shadow-color;
+        @extend %flex;
     }
 }

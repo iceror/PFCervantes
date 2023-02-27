@@ -232,6 +232,25 @@
       font-size: 40px; }
     .vr-main .vr-hero-form .vr-hero-form-inside h3 {
       font-size: 30px; }
+    .vr-main .vr-hero-form .vr-hero-form-inside label {
+      margin: 1rem; }
+    .vr-main .vr-hero-form .vr-hero-form-inside input#nombre {
+      margin: .35rem; }
+    .vr-main .vr-hero-form .vr-hero-form-inside input#correo {
+      margin: .35rem; }
+    .vr-main .vr-hero-form .vr-hero-form-inside input#numero-telefonico {
+      margin: .35rem; }
+    .vr-main .vr-hero-form .vr-hero-form-inside .input-button {
+      font-size: 1.5rem;
+      color: #eaeef5;
+      text-decoration: none;
+      margin: 10px;
+      padding: 5px 8px;
+      font-size: 20px;
+      background-color: #505562;
+      border-radius: 5px; }
+      .vr-main .vr-hero-form .vr-hero-form-inside .input-button:hover {
+        background-color: #25272d; }
 
 .main-acerca-de {
   width: 100%;
@@ -271,8 +290,17 @@
     .contactanos-main .contactanos-main-info label {
       font-size: 25px;
       margin: 10px; }
-    .contactanos-main .contactanos-main-info input {
-      width: 200px; }
+    .contactanos-main .contactanos-main-info .input-button {
+      font-size: 1.5rem;
+      color: #eaeef5;
+      text-decoration: none;
+      margin: 10px;
+      padding: 5px 8px;
+      font-size: 20px;
+      background-color: #505562;
+      border-radius: 5px; }
+      .contactanos-main .contactanos-main-info .input-button:hover {
+        background-color: #25272d; }
   .contactanos-main .contactanos-main-info-form {
     width: 50%;
     height: 350px;
@@ -331,6 +359,8 @@
       height: 750px; }
       .hero .hero-form .hero-form-inside {
         width: 750px; }
+        .hero .hero-form .hero-form-inside #caracteristica {
+          height: 6rem; }
         .hero .hero-form .hero-form-inside h2 {
           font-size: 4rem; }
         .hero .hero-form .hero-form-inside h3 {

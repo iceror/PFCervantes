@@ -13,7 +13,7 @@
         background-color: $tertiary-color;
         border-radius: 5px;
         border-color: $tertiary-color ;
-        box-shadow: 0px 0px 36px 11px  $shadow-color;
+        box-shadow: 0px 0px 36px 11px $shadow-color;
 
         .vr-hero-form-inside {
             @extend %flex;
@@ -24,6 +24,36 @@
 
             h3 {
                 font-size: 30px;
+            }
+
+            label {
+                margin: 1rem;
+            }
+
+            input#nombre {
+                margin: .35rem;
+            }
+
+            input#correo {
+                margin: .35rem;
+            }
+
+            input#numero-telefonico {
+                margin: .35rem;
+            }
+
+            .input-button {
+                font-size: 1.5rem;
+                color: $tertiary-color;
+                text-decoration: none;
+                margin: 10px;
+                padding: 5px 8px;
+                font-size: 20px;
+                background-color: $button-color;
+                border-radius: 5px;
+                &:hover {
+                    background-color: $hover-color;
+                }
             }
         }
     }

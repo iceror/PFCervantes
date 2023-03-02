@@ -1,0 +1,140 @@
+// body {
+//     margin:0;
+//     background: #1e3c72; 
+//     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); 
+//     background: linear-gradient(to right, #2a5298, #1e3c72); 
+//   }
+
+#burger-menu {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 2rem;
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 2rem;
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 2rem;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 2rem;
+}
+
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 2rem;
+}
+
+#burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+#menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:425px) {
+    #burger-menu {
+        width: 5rem;
+        height: 5rem;
+    }
+    #burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+#burger-menu span {
+    right: 0px;
+    top: 1.8rem;
+    width: 4.5rem;
+    height: .6rem;
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -1.8rem;
+    width: 4.5rem;
+    height: .6rem;
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 1.8rem;
+    width: 4.5rem;
+    height:.6rem;
+}
+}

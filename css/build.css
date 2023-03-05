@@ -40,7 +40,7 @@
   background-repeat: no-repeat; }
   .banner h2 {
     color: #2f323a;
-    font-size: 50px; }
+    font-size: 2.5rem; }
 
 .header {
   width: 100%;
@@ -111,12 +111,12 @@
     justify-content: space-evenly;
     text-align: center; }
     .footer .footer-home-link img {
-      height: 150px;
-      width: 150px; }
+      height: 5rem;
+      width: 5rem; }
     .footer .footer-home-link a {
       text-decoration: none; }
     .footer .footer-home-link h2 {
-      font-size: 45px;
+      font-size: 2.2rem;
       color: #505562; }
   .footer .footer-contact {
     width: 100%;
@@ -185,7 +185,7 @@
   width: 100%;
   height: 25%; }
   .contactanos .contactanos-link h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #d1603d; }
   .contactanos .contactanos-link a {
     text-decoration: none;
@@ -310,7 +310,7 @@
       .contactanos-main .contactanos-main-info .input-button:hover {
         background-color: #25272d; }
   .contactanos-main .contactanos-main-info-form {
-    width: 50%;
+    width: 75%;
     height: 350px;
     padding: 40px;
     background-color: #eaeef5;
@@ -323,6 +323,16 @@
     font-size: 2rem; }
   .header .navbar a {
     font-size: 1rem; } }
+
+@media screen and (max-width: 1160px) {
+  .header h1 {
+    font-size: 1.7rem;
+    margin-left: .7rem; }
+  .header img {
+    width: 70px;
+    height: auto; }
+  .header .navbar a {
+    font-size: .9rem; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -376,6 +386,14 @@
       display: flex;
       width: 90%; } }
 
+@media screen and (max-width: 610px) {
+  .banner h2 {
+    font-size: 2.2rem; } }
+
+@media screen and (max-width: 768px) {
+  .contactanos .contactanos-link h2 {
+    font-size: 3rem; } }
+
 @media screen and (max-width: 425px) {
   .hero {
     height: 1500px; }
@@ -419,13 +437,20 @@
     .conoceme .conoceme-text a {
       font-size: 3.5rem; } }
 
+@media screen and (max-width: 768px) {
+  .vr-main .vr-hero-form {
+    width: 75%; }
+    .vr-main .vr-hero-form .vr-hero-form-inside h2 {
+      font-size: 2rem; }
+    .vr-main .vr-hero-form .vr-hero-form-inside h3 {
+      font-size: 1.5rem; } }
+
 @media screen and (max-width: 425px) {
   .vr-main {
     height: 1500px; }
     .vr-main .vr-hero-form {
       height: 1150px; }
       .vr-main .vr-hero-form .vr-hero-form-inside {
-        width: 800px;
         display: flex;
         flex-direction: column; }
         .vr-main .vr-hero-form .vr-hero-form-inside h2 {
@@ -453,6 +478,10 @@
           width: 10rem;
           height: 3rem;
           font-size: 2rem; } }
+
+@media screen and (max-width: 725px) {
+  .main-acerca-de .asesor-info {
+    display: flex; } }
 
 @media screen and (max-width: 425px) {
   .main-acerca-de {

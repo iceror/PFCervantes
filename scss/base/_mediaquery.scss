@@ -15,6 +15,25 @@
 
 
 }
+@media screen and (max-width: 1160px) {
+    .header {
+        h1 {
+            font-size: 1.7rem;
+            margin-left: .7rem;
+        }
+
+        img {
+            width: 70px;
+            height: auto;
+        }
+
+        .navbar {
+            a {
+                font-size: .9rem;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .header {
@@ -103,7 +122,24 @@
     }
 }
 
+@media screen and (max-width: 610px) {
+    .banner {
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+}
 // INDEX //TODO FONT SIZE BOTONES NO SE APLICA 
+@media screen and (max-width: 768px) {
+    .contactanos {
+
+        .contactanos-link {
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}
 @media screen and (max-width: 425px) {
     .hero {
         height: 1500px;
@@ -186,6 +222,24 @@
 }
 
 // VENDE-RENTA 
+@media screen and (max-width:768px) {
+    .vr-main {
+    .vr-hero-form {
+        width: 75%;
+
+        .vr-hero-form-inside {
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+}
+
 
 @media screen and (max-width:425px) {
     .vr-main {
@@ -196,7 +250,7 @@
 
 
             .vr-hero-form-inside {
-                width: 800px;
+                // width: 800px;
                 display: flex;
                 flex-direction: column;
 
@@ -248,6 +302,13 @@
 }
 
 // ACERCA DE 
+@media screen and (max-width: 725px) {
+    .main-acerca-de {
+        .asesor-info {
+            display: flex;
+        }
+    }
+}
 @media screen and (max-width: 425px) {
     .main-acerca-de {
         height: 100%;
@@ -272,7 +333,6 @@
         .asesor-img {
             margin: 30px 0 30px 0;
             width: 80%;
-
         }
 
         .asesor-text {

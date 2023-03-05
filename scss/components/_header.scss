@@ -2,13 +2,14 @@
     width: 100%;
     height: 100px;
     background-color: rgb(47, 50, 58);
-    grid-template-columns: 1fr 3fr 3fr;
-    @extend %grid;
+    @extend %flex-header;
 
 
     a {
         text-decoration: none;
-        @extend %flex;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     img {
@@ -19,7 +20,8 @@
 
     h1 {
         color: rgb(255, 255, 255);
-        font-size: 40px;
+        font-size: 2.5rem;
+        margin-left: 1rem;
     }
 
     nav {
